@@ -236,7 +236,7 @@ class SwipeableParallaxCarousel extends Component {
   // onLayout method to resize when orientation change
   //
   _onLayout() {
-    this.setState({ screenWidth: Dimensions.get('window').width });
+    this.setState({ screenWidth: Dimensions.get('window').width - 20 });
   }
 
   // Render method
