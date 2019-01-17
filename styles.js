@@ -41,13 +41,13 @@ const styles = {
   },
   navigationContainer: {
     position: 'absolute',
-    bottom: 0,
+    top: -25,
     left: 0,
     right: 0,
     justifyContent: 'center',
     alignItems: 'center',
     padding: 5,
-    paddingBottom: 15,
+    paddingBottom: 25,
     paddingTop: 15,
     flexDirection: 'row',
     zIndex: 1,
@@ -60,7 +60,6 @@ const styles = {
     marginLeft: 5,
     marginRight: 5,
     borderRadius: 3,
-    marginBottom: 175,
   },
   navigationItemSquares: {
     borderRadius: 0,
