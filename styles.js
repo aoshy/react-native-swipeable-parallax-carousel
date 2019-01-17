@@ -54,12 +54,13 @@ const styles = {
     elevation: 1,
   },
   navigationItem: {
-    backgroundColor: 'rgba(255, 255, 255, 0.45)',
+    backgroundColor: '#A9A9A9',
     height: 6,
     width: 6,
     marginLeft: 5,
     marginRight: 5,
     borderRadius: 3,
+    marginBottom: 175,
   },
   navigationItemSquares: {
     borderRadius: 0,
