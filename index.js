@@ -180,6 +180,7 @@ class SwipeableParallaxCarousel extends Component {
             <ImageBackground
               source={{ uri: item.imagePath }}
               style={styles.itemImage}
+              imageStyle={{ borderRadius: 30 }}
             >
               {this._getOverlay(overlayPath, height)}
               {this._getTitle(item, titleColor)}

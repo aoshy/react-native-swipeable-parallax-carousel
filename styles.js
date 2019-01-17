@@ -1,6 +1,7 @@
 const styles = {
   itemContainer: {
     position: 'absolute',
+    
   },
   itemImage: {
     flex: 1,
@@ -10,7 +11,7 @@ const styles = {
   },
   overlay: {
     position: 'absolute',
-    resizeMode: 'stretch',
+    resizeMode: 'stretch'
   },
   itemTitleContainer: {
     position: 'absolute',
