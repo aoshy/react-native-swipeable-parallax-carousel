@@ -1,6 +1,7 @@
 const styles = {
   itemContainer: {
     position: 'absolute',
+    backgroundColor: '#ebebeb'
     
   },
   itemImage: {
@@ -42,7 +43,21 @@ const styles = {
   },
   navigationContainer: {
     position: 'absolute',
-    top: -25,
+    top: -27,
+    left: 0,
+    right: 0,
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 5,
+    paddingBottom: 25,
+    paddingTop: 15,
+    flexDirection: 'row',
+    zIndex: 1,
+    elevation: 1,
+  },
+  bottomNavigationContainer: {
+    position: 'absolute',
+    bottom: -40,
     left: 0,
     right: 0,
     justifyContent: 'center',

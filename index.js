@@ -199,7 +199,7 @@ class SwipeableParallaxCarousel extends Component {
     } = this.props;
     if (navigation) {
       return (
-        <View style={styles.navigationContainer}>
+        <View style={ this.props.bottomNavigation ? styles.bottomNavigationContainer : styles.navigationContainer }>
           {this._renderNavigationItems()}
         </View>
       );
@@ -244,7 +244,7 @@ class SwipeableParallaxCarousel extends Component {
   render() {
     return (
       <View onLayout={this._onLayout.bind(this)}>
-        <View style={{ height: this.props.height, width: this.state.screenWidth }}>
+        <View style={{ height: this.props.height, width: this.state.screenWidth, backgroundColor: '#ebebeb' }}>
           {this._renderItems()}
           {this._renderNavigation()}
         </View>
