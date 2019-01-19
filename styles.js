@@ -1,7 +1,7 @@
 const styles = {
   itemContainer: {
     position: 'absolute',
-    backgroundColor: '#ebebeb'
+    backgroundColor: 'transparent'
     
   },
   itemImage: {
@@ -43,7 +43,7 @@ const styles = {
   },
   navigationContainer: {
     position: 'absolute',
-    top: -27,
+    top: -30,
     left: 0,
     right: 0,
     justifyContent: 'center',

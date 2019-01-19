@@ -180,7 +180,7 @@ class SwipeableParallaxCarousel extends Component {
             <ImageBackground
               source={{ uri: item.imagePath }}
               style={styles.itemImage}
-              imageStyle={{ borderRadius: 30 }}
+              imageStyle={{ borderRadius: 20 }}
             >
               {this._getOverlay(overlayPath, height)}
               {this._getTitle(item, titleColor)}
@@ -236,7 +236,11 @@ class SwipeableParallaxCarousel extends Component {
   // onLayout method to resize when orientation change
   //
   _onLayout() {
-    this.setState({ screenWidth: Dimensions.get('window').width - 20 });
+    if (this.props.detailsScreen) {
+      this.setState({ screenWidth: Dimensions.get('window').width * 0.85 });
+    } else {
+      this.setState({ screenWidth: Dimensions.get('window').width - 20 });
+    }
   }
 
   // Render method
@@ -244,7 +248,7 @@ class SwipeableParallaxCarousel extends Component {
   render() {
     return (
       <View onLayout={this._onLayout.bind(this)}>
-        <View style={{ height: this.props.height, width: this.state.screenWidth, backgroundColor: '#ebebeb' }}>
+        <View style={{ flex: 1, height: this.props.height, width: this.state.screenWidth, backgroundColor: 'transparent', }}>
           {this._renderItems()}
           {this._renderNavigation()}
         </View>
