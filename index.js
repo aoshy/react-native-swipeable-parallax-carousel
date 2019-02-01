@@ -199,7 +199,7 @@ class SwipeableParallaxCarousel extends Component {
     } = this.props;
     if (navigation) {
       return (
-        <View style={styles.navigationContainer}>
+        <View style={ this.props.bottomNavigation ? styles.bottomNavigationContainer : styles.navigationContainer}>
           {this._renderNavigationItems()}
         </View>
       );
