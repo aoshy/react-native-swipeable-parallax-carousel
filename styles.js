@@ -6,6 +6,7 @@ const styles = {
   },
   itemImage: {
     flex: 1,
+    
   },
   touchableContainer: {
     flex: 1,
