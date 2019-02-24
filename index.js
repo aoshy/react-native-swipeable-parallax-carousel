@@ -180,7 +180,6 @@ class SwipeableParallaxCarousel extends Component {
             <ImageBackground
               source={{ uri: item.imagePath }}
               style={styles.itemImage}
-              imageStyle={{ borderRadius: 30, marginRight: 10, marginLeft: 10 }}
             >
               {this._getOverlay(overlayPath, height)}
               {this._getTitle(item, titleColor)}
@@ -236,7 +235,7 @@ class SwipeableParallaxCarousel extends Component {
   // onLayout method to resize when orientation change
   //
   _onLayout() {
-    this.setState({ screenWidth: Dimensions.get('window').width - 20 });
+    this.setState({ screenWidth: Dimensions.get('window').width });
   }
 
   // Render method
